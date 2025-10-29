@@ -304,16 +304,38 @@ function validateField(field) {
 })();
 
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   SPA.init();
 
-  const btnContrast = document.getElementById('toggle-contrast');
-  if (btnContrast) {
-    btnContrast.addEventListener('click', () => {
-      document.body.classList.toggle('high-contrast');
-    });
-  }
+  const modeBtn = document.getElementById("mode-toggle");
+  const modes = ["normal", "modo-escuro", "alto-contraste"];
+  let current = 0;
+
+  modeBtn.addEventListener("click", () => {
+    // Remove todas as classes de estilo
+    document.body.classList.remove("dark-mode", "high-contrast");
+
+    // Avança para o próximo modo
+    current = (current + 1) % modes.length;
+
+    // Aplica a classe correspondente
+    if (modes[current] === "modo-escuro") {
+      document.body.classList.add("dark-mode");
+    } else if (modes[current] === "alto-contraste") {
+      document.body.classList.add("high-contrast");
+    }
+
+    // Atualiza o texto do botão
+    let texto = "";
+    if (modes[current] === "normal") texto = "Normal";
+    if (modes[current] === "modo-escuro") texto = "Modo Escuro";
+    if (modes[current] === "alto-contraste") texto = "Alto Contraste";
+
+    modeBtn.textContent = `Modo: ${texto}`;
+  });
 });
+
+
 
 
 

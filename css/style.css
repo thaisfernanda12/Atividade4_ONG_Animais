@@ -603,50 +603,130 @@ input:valid, textarea:valid, select:valid {
 }
 
 
-/* Modo alto contraste / escuro */
+/* Modo escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #E0E0E0;
+}
+
+body.dark-mode footer {
+  background-color: #1e1e1e; 
+  color: #E0E0E0;         
+  
+}
+
+body.dark-mode a {
+  color: #bb86fc;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #1e1e1e;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+body.dark-mode button,
+body.dark-mode .button-enviar {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+
+body.dark-mode nav {
+  background-color: #1f1f1f; 
+  color: #fff;            
+  
+}
+
+body.dark-mode nav a {
+  color: #bb86fc; 
+}
+
+body.dark-mode nav a:hover {
+  color: #fff; 
+}
+
+
+/* Modo alto contraste */
 body.high-contrast {
-  background-color: #5b5555; 
+  background-color: #000; 
   color: #fff;            
 }
 
-
 body.high-contrast a {
-  color: #0ff; 
+  color: #0ff;            
   text-decoration: underline;
 }
-
 
 body.high-contrast input,
 body.high-contrast textarea,
 body.high-contrast select {
-  background-color: #807d83;
-  color: #fff;
+  background-color: #000; 
+  color: #fff;           
   border: 2px solid #fff;
 }
 
-
-body.high-contrast .button-enviar,
-body.high-contrast button {
-  background-color: #6c5656;
-  color: #000;
+body.high-contrast button,
+body.high-contrast .button-enviar {
+  background-color: #fff; 
+  color: #000;            
   border: 2px solid #fff;
 }
-
 
 body.high-contrast .badge {
-  background-color: #121111;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
+body.high-contrast form {
+  background-color: #000; 
+  color: #fff;          
+  border: 2px solid #fff;
+}
+
+body.high-contrast input::placeholder,
+body.high-contrast textarea::placeholder {
+  color: #fff;
+  opacity: 1;
+}
 
 body.high-contrast header,
 body.high-contrast nav,
 body.high-contrast footer,
 body.high-contrast section,
 body.high-contrast fieldset {
-  background-color: #2d2c2c;
-  color: #918080;
+  background-color: #000;
+  color: #fff;
 }
+
+body.high-contrast nav {
+  background-color: #000;
+}
+
+body.high-contrast .informacoes .card {
+  background-color: #000; 
+  color: #fff;            
+  border: 2px solid #fff; 
+}
+
+body.high-contrast .informacoes .card a {
+  color: #0ff;
+}
+
+body.high-contrast .informacoes .card a:hover {
+  color: #ff0; 
+}
+
+#mode-toggle {
+  padding: 4px 8px;       /* menos espaço interno */
+  font-size: 0.85rem;     /* tamanho da fonte menor */
+  border-radius: 4px;     /* cantos mais arredondados */
+  cursor: pointer;        /* mantém o ponteiro de clique */
+}
+
 
 
 
