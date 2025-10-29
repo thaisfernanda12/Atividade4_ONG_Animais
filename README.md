@@ -5,7 +5,7 @@ O site é destinado a visitantes, apoiadores e novos voluntários, e foi criado 
 
 ---
 
-## 🚀 Acesse o site
+## 🚀 Acesse o site em sua versão final com todos os itens solicitados:
 
 https://thaisfernanda12.github.io/Atividade4_ONG_Animais/
 
