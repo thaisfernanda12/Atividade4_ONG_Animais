@@ -615,6 +615,12 @@ body.dark-mode footer {
   
 }
 
+body.dark-mode form {
+  background-color: #000; 
+  color: #fff;          
+  border: 2px solid #fff;
+}
+
 body.dark-mode a {
   color: #bb86fc;
 }
