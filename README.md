@@ -5,9 +5,9 @@ O site é destinado a visitantes, apoiadores e novos voluntários, e foi criado 
 
 ---
 
-## 🚀 Acesse o site
+## 🚀 Acesse o site em sua versão final com todos os itens solicitados:
 
-
+https://thaisfernanda12.github.io/Atividade4_ONG_Animais/
 
 ---
 
@@ -23,6 +23,10 @@ O site é destinado a visitantes, apoiadores e novos voluntários, e foi criado 
 ## 🧩 Etapa 1 — HTML Semântico
 
 Todas as páginas utilizam **HTML5 semântico**, aplicando boas práticas de organização e acessibilidade.
+- Tipos de input HTML5: Nome completo, e-mail, CPF, telefone, data de nascimento, endereço, CEP, cidade e estado.
+- Validação nativa com atributos HTML5 (required, pattern, type, etc.).
+- Agrupamento lógico de campos como <fieldset>
+- Máscaras de input para CPF, telefone e CEP, garantindo padronização de dados.
 
 ---
 
