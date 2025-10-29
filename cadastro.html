@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se</title>
+    <link rel="shortcut icon" href="assets/icons/amigosdepatas.ico?v=1" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header>
+        <img src="assets/imagens/logo.jpg" alt="logo do site" width="200px">
+        <h1>ONG PARA ANIMAIS DE RUA</h1>
+    </header>
+
+    <nav class="nav-container">
+        <!-- Menu normal -->
+        <ul class="menu-normal">
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="projetossociais.html">Sobre projetos</a></li>
+            <li><a href="cadastro.html">Cadastre-se</a></li>
+            <li><a href="doacoes.html">Como doar</a></li>
+        </ul>
+
+        <!-- Ícone do hamburger -->
+        <div class="hamburguer">
+            &#9776;
+            
+            <ul class="menu-mobile">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="projetossociais.html">Sobre projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+                <li><a href="doacoes.html">Como doar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- informações principais-->
+    <main>
+        <section class="cadastre-se">
+            <h1>Cadastre-se para ser voluntário!</h1>
+            <p>Junte-se a nós na missão de transformar vidas! Ao se cadastrar, você pode ajudar de diversas maneiras, seja como voluntário, adotante ou doador. Cada ação faz a diferença para nossos amigos de patas.</p>
+            <picture>
+                <source srcset="assets/imagens/foto5.webp" type="image/webp">
+                <img src="assets/imagens/foto5.jpg" alt="cachorro com patinha">
+            </picture>
+        </section>
+
+        <section class="formulario">
+            <h2>Formulário de Cadastro</h2>
+
+            <!-- ALERT DE AVISO -->
+            <div class="alert alerta-info">
+                Preencha todos os campos obrigatórios (*)
+            </div>
+
+
+                <!-- FORMULÁRIO DE CADASTRO -->
+            <form>
+                <fieldset>
+                    <legend>Informações de contato</legend>
+
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\(\d{2}\) \d{4,5}-\d{4}" required><br>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required><br>
+
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" name="nascimento" id="nascimento"><br>
+
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro" required>
+
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="\d{5}-\d{3}" required>
+
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" placeholder="Estado" required><br>
+                </fieldset>
+
+                <!-- formulario checkbox-->
+                <fieldset>
+                    <legend>Deseja ser Doador, Adotante ou Voluntário?</legend>
+                    <p>Marque as opções que desejar (pode escolher mais de uma):</p>
+
+                    <label>
+                        <input type="checkbox" name="participacao" value="voluntario">
+                        <span class="badge badge-voluntario">Voluntário</span>
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="participacao" value="adotante">
+                        <span class="badge badge-adotante">Adotante</span>
+                    </label><br>
+                    <label>
+                        <input type="checkbox" name="participacao" value="doador">
+                        <span class="badge badge-doador">Doador</span>
+                    </label>
+                </fieldset>
+
+                               
+                <input type="checkbox" id="enviado" class="enviado-checkbox" />
+
+                <label for="enviado" class="button-enviar">Enviar</label>
+
+                
+            </form><br>
+        </section>
+        
+        
+        <section>
+            <picture>
+                <source srcset="assets/imagens/foto6.webp" type="image/webp">
+                <img src="assets/imagens/foto6.jpg" alt="gato e cão">
+            </picture>
+        </section>
+    </main>
+    <script src="/js/spa-form-validation.js" defer></script>
+
+
+    <footer>
+        <p>&copy; ONG de Animais. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
