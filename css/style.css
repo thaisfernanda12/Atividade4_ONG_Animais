@@ -603,6 +603,54 @@ input:valid, textarea:valid, select:valid {
 }
 
 
+/* Modo alto contraste / escuro */
+body.high-contrast {
+  background-color: #5b5555; 
+  color: #fff;            
+}
+
+
+body.high-contrast a {
+  color: #0ff; 
+  text-decoration: underline;
+}
+
+
+body.high-contrast input,
+body.high-contrast textarea,
+body.high-contrast select {
+  background-color: #807d83;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
+body.high-contrast .button-enviar,
+body.high-contrast button {
+  background-color: #6c5656;
+  color: #000;
+  border: 2px solid #fff;
+}
+
+
+body.high-contrast .badge {
+  background-color: #121111;
+  color: #fff;
+}
+
+
+body.high-contrast header,
+body.high-contrast nav,
+body.high-contrast footer,
+body.high-contrast section,
+body.high-contrast fieldset {
+  background-color: #2d2c2c;
+  color: #918080;
+}
+
+
+
+
 
 /* 
    BREAKPOINTS
